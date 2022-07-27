@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html onmousemove="changeCoords(event)" onclick="clearDragged()">
+<head>
+	<title>MtgOverlay</title>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+	<body>
+		<button id="addButton" onclick="addToken()">Add Token</button>
+
+		<section id="cardCBase" class="cardContainer" style="display: none;">
+			<section id="token1Selector" class="tokenSelection">
+				<button onclick="changeToken('card-1', 'Ability+Punchcard+(TC20).png')">
+					<img id="tempCard1" class="card" src="Assets/Tokens/Ability+Punchcard+(TC20).png">
+				</button>
+				<button style="margin-left: 210px;">
+					<img id="tempCard2" class="card" src="Assets/Tokens/Ability+Punchcard+(TC20).png">
+				</button>
+				<button style="margin-left: 420px;">
+					<img id="tempCard3" class="card" src="Assets/Tokens/Ability+Punchcard+(TC20).png">
+				</button>
+				<button style="margin-left: 630px;">
+					<img id="tempCard4" class="card" src="Assets/Tokens/Ability+Punchcard+(TC20).png">
+				</button>
+
+				<button style="margin-top: 280px;">
+					<img id="tempCard5" class="card" src="Assets/Tokens/Ability+Punchcard+(TC20).png">
+				</button>
+				<button style="margin-left: 210px;margin-top: 280px;">
+					<img id="tempCard6" class="card" src="Assets/Tokens/Ability+Punchcard+(TC20).png">
+				</button>
+				<button style="margin-left: 420px;margin-top: 280px;">
+					<img id="tempCard7" class="card" src="Assets/Tokens/Ability+Punchcard+(TC20).png">
+				</button>
+				<button style="margin-left: 630px;margin-top: 280px;">
+					<img id="tempCard8" class="card" src="Assets/Tokens/Ability+Punchcard+(TC20).png">
+				</button>
+			</section>
+			<input placeholder="token" onkeyup="searchTokens(this, 'token1Selector')">
+			<input type="" name="" placeholder="number of tokens" value="1" onkeyup="changeCount('tokenCount', this)">
+			<button class="cardButton" onclick="addToDrag('cardContainer')">
+				<img id="cardView" class="card" src="Assets/Tokens/Ability+Punchcard+(TC20).png">
+				<p onmouseenter="tap(this)" class="tokenCount" id="tokenCount">1</p>
+			</button>
+		</section>
+	</body>
+</html>

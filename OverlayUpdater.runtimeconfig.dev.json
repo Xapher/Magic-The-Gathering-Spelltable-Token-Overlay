@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Xapher\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Xapher\\.nuget\\packages"
+    ]
+  }
+}

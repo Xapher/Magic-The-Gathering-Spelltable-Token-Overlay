@@ -1,0 +1,68 @@
+.cardContainer {
+	max-width: 200px;
+	min-width: 200px;
+	float: left;
+	position: fixed;
+}
+
+.cardContainerHidden {
+	max-width: 200px;
+	min-width: 200px;
+	float: left;
+	position: fixed;
+	display: none;
+}
+
+
+#addButton {
+	width: 200px;
+	height:  20px;
+}
+#hideTokens {
+	margin-top: 20px;
+}
+
+
+.card {
+	width: 100%;
+}
+
+input {
+	width: 48%;
+	float: left;
+}
+.cardButton {
+	background-color: transparent;
+	border-style: none;
+}
+
+#addButton {
+	position: fixed;
+}
+
+.tokenSelection > button {
+	position: fixed;
+	max-width: 230px;
+}
+
+.tokenSelection > button > img {
+	min-width: 200px;
+	max-width: 200px;
+}
+
+.tokenSelection {
+	display: none;
+	margin-left: 240px;
+}
+
+.tokenCount {
+	position: fixed;
+	color: white;
+	font-size: 80px;
+	margin-top: -40px;
+	 text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black, 1px 1px 2px black;
+}
+
+.tapped {
+	transform: rotate(90deg);
+}

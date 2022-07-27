@@ -1,0 +1,179 @@
+var tokens = ["Ability+Punchcard+(TC20).png","Ability+Punchcard+(TIKO).png","Acorn+Stash+(TUND).png","Adorned+Pouncer+(THOU).png","Ajani+Adversary+of+Tyrants+Emblem+(TM19).png","Ajani+Steadfast+Emblem+(TM15).png","Ajanis+Pridemate+(TM20).png","Angel+(T2X2).png","Angel+(T2XM).png","Angel+(TA25).png","Angel+(TAFC).png","Angel+(TAFR).png","Angel+(TAVR).png","Angel+(TC14).png","Angel+(TC15).png","Angel+(TC18).png","Angel+(TC20).png","Angel+(TCMR).png","Angel+(TCON).png","Angel+(TGRN).png","Angel+(TGTC).png","Angel+(TIMA).png","Angel+(TISD).png","Angel+(TM14).png","Angel+(TM19).png","Angel+(TM21).png","Angel+(TMH1).png","Angel+(TMM3).png","Angel+(TNEC).png","Angel+(TOGW).png","Angel+(TORI).png","Angel+(TPCA).png","Angel+(TSNC).png","Angel+(TSOI).png","Angel+(TVOC).png","Angel+(TWAR).png","Angel+(TZEN).png","Angel+of+Sanctions+(TAKH).png","Angel+of+Sanctions+(TC19).png","Angel+Warrior+(TCLB).png","Angel+Warrior+(TKHM).png","Angel+Warrior+(TZNR).png","Anointer+Priest+(TAKH).png","Ape+(T2XM).png","Ape+(TC14).png","Ape+(TTSR).png","Arlinn+Kord+Emblem+(TSOI).png","Ashaya+the+Awoken+World+(TORI).png","Assassin+(TC19).png","Assassin+(TCN2).png","Assassin+(TDDM).png","Assassin+(TRTR).png","Assassin+(TWAR).png","Assembly-Worker+(TTSR).png","Avatar+(TLRW).png","Avatar+(TM10).png","Avatar+(TM11).png","Avatar+(TM19).png","Avatar+(TSTX).png","Aven+Initiate+(T2X2).png","Aven+Initiate+(TAKH).png","Aven+Wind+Guide+(TAKH).png","Basri+Ket+Emblem+(TM21).png","Bat+(TC17).png","Bat+(TGK2).png","Bat+(TGVL).png","Bat+(TM19).png","Bat+(TMID).png","Bat+(TMMA).png","Bat+(TTSR).png","Bat+(TVOC).png","Bear+(T2X2).png","Bear+(TC15).png","Bear+(TELD).png","Bear+(TKHM).png","Bear+(TKTK).png","Bear+(TMH1).png","Beast+(T2XM).png","Beast+(TAFC).png","Beast+(TAKH).png","Beast+(TALA).png","Beast+(TBBD).png","Beast+(TC14).png","Beast+(TC15).png","Beast+(TC16).png","Beast+(TC18).png","Beast+(TC19).png","Beast+(TC20).png","Beast+(TC21).png","Beast+(TCLB).png","Beast+(TCMA).png","Beast+(TCMR).png","Beast+(TCN2).png","Beast+(TDDD).png","Beast+(TDDL).png","Beast+(TDDS).png","Beast+(TE01).png","Beast+(TEVE).png","Beast+(TGVL).png","Beast+(TIKO).png","Beast+(TIMA).png","Beast+(TKLD).png","Beast+(TLRW).png","Beast+(TM10).png","Beast+(TM11).png","Beast+(TM12).png","Beast+(TM13).png","Beast+(TM14).png","Beast+(TM15).png","Beast+(TM19).png","Beast+(TM21).png","Beast+(TMED).png","Beast+(TMH2).png","Beast+(TMIC).png","Beast+(TMID).png","Beast+(TMM3).png","Beast+(TNCC).png","Beast+(TNEC).png","Beast+(TNPH).png","Beast+(TPCA).png","Beast+(TRNA).png","Beast+(TZEN).png","Beast+(TZNC).png","Beeble+(TUND).png","Bird+(TBNG).png","Bird+(TC16).png","Bird+(TC19).png","Bird+(TC20).png","Bird+(TCM2).png","Bird+(TEVE).png","Bird+(TGK2).png","Bird+(TIMA).png","Bird+(TKHC).png","Bird+(TKHM).png","Bird+(TKTK).png","Bird+(TM11).png","Bird+(TM12).png","Bird+(TM21).png","Bird+(TMH1).png","Bird+(TMH2).png","Bird+(TMID).png","Bird+(TMM3).png","Bird+(TRTR).png","Bird+(TTHS).png","Bird+(TZEN).png","Bird+(TZNC).png","Bird+Illusion+(TC20).png","Bird+Illusion+(TGRN).png","Bird+Soldier+(TARB).png","Blood+(TVOW).png","Boar+(T2X2).png","Boar+(TC21).png","Boar+(TCLB).png","Boar+(TELD).png","Boar+(TKHC).png","Boar+(TPCA).png","Boar+(TTHS).png","Boar+(TVOW).png","Boo+(TAFR).png","Boo+(TCLB).png","Brainiac+(TUST).png","Carnivore+(TEMA).png","Cat+(T2XM).png","Cat+(TAKH).png","Cat+(TC14).png","Cat+(TC15).png","Cat+(TC17).png","Cat+(TC18).png","Cat+(TCMR).png","Cat+(TIKO).png","Cat+(TKHM).png","Cat+(TM13).png","Cat+(TM14).png","Cat+(TM19).png","Cat+(TM21).png","Cat+(TSNC).png","Cat+(TSOM).png","Cat+(TZNR).png","Cat+Beast+(TNCC).png","Cat+Beast+(TZNR).png","Cat+Bird+(TIKO).png","Cat+Dragon+(T2X2).png","Cat+Dragon+(TC17).png","Cat+Soldier+(TBNG).png","Cat+Warrior+(TC17).png","Cat+Warrior+(TC18).png","Centaur+(TBNG).png","Centaur+(TC19).png","Centaur+(TCLB).png","Centaur+(TMIC).png","Centaur+(TMM3).png","Centaur+(TRNA).png","Centaur+(TRTR).png","Champion+of+Wits+(TAFC).png","Champion+of+Wits+(TC21).png","Champion+of+Wits+(THOU).png","Champion+of+Wits+(TNCC).png","Chandra+Awakened+Inferno+Emblem+(TM20).png","Chandra+Dressed+to+Kill+Emblem+(TVOW).png","Chandra+Roaring+Flame+Emblem+(TORI).png","Chandra+Torch+of+Defiance+Emblem+(TKLD).png","Citizen+(TSNC).png","Citizen+(TUMA).png","Citizen+(TWAR).png","Citys+Blessing+(TRIX).png","Cleric+(TDOM).png","Cleric+(TGK2).png","Cleric+(TGTC).png","Cleric+(TTHS).png","Cloud+Sprite+(TTSR).png","Clue+(T2XM).png","Clue+(TAFC).png","Clue+(TC18).png","Clue+(TCLB).png","Clue+(TMH2).png","Clue+(TMID).png","Clue+(TNCC).png","Clue+(TSOI).png","Clue+(TVOC).png","Companion+(TIKO).png","Construct+(TC18).png","Construct+(TC21).png","Construct+(TCLB).png","Construct+(TCN2).png","Construct+(TCNS).png","Construct+(TDOM).png","Construct+(TKLD).png","Construct+(TM21).png","Construct+(TMED).png","Construct+(TMH1).png","Construct+(TMH2).png","Construct+(TNEO).png","Construct+(TUST).png","Construct+(TWWK).png","Construct+(TZNR).png","Copy+(T2XM).png","Copy+(TC21).png","Copy+(TCLB).png","Copy+(TCMR).png","Copy+(TSNC).png","Copy+(TVOW).png","Copy+(TZNR).png","Core+Set+2019+Checklist+(TM19).png","Crab+(TMH2).png","Dack+Fayden+Emblem+(TCNS).png","Dack+Fayden+Emblem+(TEMA).png","Dack+Fayden+Emblem+(TMED).png","Daretti+Scrap+Savant+Emblem+(TC14).png","Daretti+Scrap+Savant+Emblem+(TC16).png","Daretti+Scrap+Savant+Emblem+(TCM2).png","Dark+Ascension+Checklist+(TDKA).png","Demon+(T2XM).png","Demon+(TAVR).png","Demon+(TC14).png","Demon+(TC21).png","Demon+(TCLB).png","Demon+(TCNS).png","Demon+(TDDC).png","Demon+(TDOM).png","Demon+(TDVD).png","Demon+(TISD).png","Demon+(TM20).png","Demon+(TM21).png","Demon+(TNCC).png","Demon+(TORI).png","Demon+Berserker+(TKHM).png","Devil+(TAFR).png","Devil+(TCLB).png","Devil+(TMID).png","Devil+(TNCC).png","Devil+(TSNC).png","Devil+(TSOI).png","Devil+(TWAR).png","Dinosaur+(TGN2).png","Dinosaur+(TIKO).png","Dinosaur+(TXLN).png","Dinosaur+Beast+(TIKO).png","Dinosaur+Cat+(TC20).png","Djinn+Monk+(TDTK).png","Djinn+Monk+(TIMA).png","Dog+(TM21).png","Dog+(TSNC).png","Dog+Illusion+(TAFR).png","Domri+Chaos+Bringer+Emblem+(TMED).png","Domri+Chaos+Bringer+Emblem+(TRNA).png","Domri+Rade+Emblem+(TGTC).png","Domri+Rade+Emblem+(TMM3).png","Dovin+Baan+Emblem+(TKLD).png","Dragon+(T10E).png","Dragon+(TAFC).png","Dragon+(TALA).png","Dragon+(TARB).png","Dragon+(TBFZ).png","Dragon+(TC15).png","Dragon+(TC17).png","Dragon+(TC18).png","Dragon+(TC19).png","Dragon+(TCLB).png","Dragon+(TCMA).png","Dragon+(TCMR).png","Dragon+(TCN2).png","Dragon+(TDTK).png","Dragon+(TEMA).png","Dragon+(TGK2).png","Dragon+(TGN2).png","Dragon+(TIMA).png","Dragon+(TKHM).png","Dragon+(TM14).png","Dragon+(TM15).png","Dragon+(TM19).png","Dragon+(TMED).png","Dragon+(TMM3).png","Dragon+(TMMA).png","Dragon+(TPCA).png","Dragon+(TRTR).png","Dragon+(TUND).png","Dragon+(TUST).png","Dragon+(TWAR).png","Dragon+(TWWK).png","Dragon+Egg+(TC18).png","Dragon+Illusion+(TVOW).png","Dragon+Spirit+(TAFC).png","Dragon+Spirit+(TNEO).png","Drake+(T2X2).png","Drake+(TAKH).png","Drake+(TC15).png","Drake+(TC19).png","Drake+(TC20).png","Drake+(TC21).png","Drake+(TCMA).png","Drake+(TDDS).png","Drake+(TM13).png","Drake+(TNCC).png","Drake+(TUMA).png","Drake+(TZNR).png","Dreamstealer+(THOU).png","Dungeon+of+the+Mad+Mage+(TAFR).png","Dwarf+(TELD).png","Dwarf+Berserker+(TKHM).png","Earthshaker+Khenra+(THOU).png","Egg+(T2X2).png","Egg+(TC19).png","Eldrazi+(TBFZ).png","Eldrazi+(TC19).png","Eldrazi+(TC21).png","Eldrazi+(TNCC).png","Eldrazi+(TPCA).png","Eldrazi+Horror+(TCLB).png","Eldrazi+Horror+(TEMN).png","Eldrazi+Scion+(T2X2).png","Eldrazi+Scion+(TBFZ).png","Eldrazi+Scion+(TOGW).png","Eldrazi+Spawn+(T2XM).png","Eldrazi+Spawn+(TC17).png","Eldrazi+Spawn+(TMIC).png","Eldrazi+Spawn+(TMM2).png","Eldrazi+Spawn+(TNCC).png","Eldrazi+Spawn+(TPCA).png","Eldrazi+Spawn+(TROE).png","Eldritch+Moon+Checklist+(TEMN).png","Elemental+(T2X2).png","Elemental+(T2XM).png","Elemental+(TBFZ).png","Elemental+(TBNG).png","Elemental+(TC14).png","Elemental+(TC15).png","Elemental+(TC16).png","Elemental+(TC18).png","Elemental+(TC20).png","Elemental+(TC21).png","Elemental+(TCMA).png","Elemental+(TCON).png","Elemental+(TDD1).png","Elemental+(TDDS).png","Elemental+(TDDT).png","Elemental+(TDGM).png","Elemental+(TDOM).png","Elemental+(TEMA).png","Elemental+(TEVE).png","Elemental+(TEVG).png","Elemental+(TKHC).png","Elemental+(TLRW).png","Elemental+(TM14).png","Elemental+(TM20).png","Elemental+(TMH1).png","Elemental+(TMH2).png","Elemental+(TMID).png","Elemental+(TMM3).png","Elemental+(TMMA).png","Elemental+(TNCC).png","Elemental+(TNEC).png","Elemental+(TOGW).png","Elemental+(TORI).png","Elemental+(TRIX).png","Elemental+(TROE).png","Elemental+(TRTR).png","Elemental+(TSHM).png","Elemental+(TSTX).png","Elemental+(TTHB).png","Elemental+(TTHS).png","Elemental+(TUMA).png","Elemental+(TZEN).png","Elemental+(TZNC).png","Elemental+Bird+(TM20).png","Elemental+Shaman+(TC15).png","Elemental+Shaman+(TCM2).png","Elemental+Shaman+(TDD2).png","Elemental+Shaman+(TJVC).png","Elemental+Shaman+(TLRW).png","Elephant+(T2XM).png","Elephant+(TC14).png","Elephant+(TC15).png","Elephant+(TC21).png","Elephant+(TCMA).png","Elephant+(TCMR).png","Elephant+(TCNS).png","Elephant+(TDDD).png","Elephant+(TDDS).png","Elephant+(TEMA).png","Elephant+(TGVL).png","Elephant+(TMH1).png","Elephant+(TMIC).png","Elephant+(TMM2).png","Elephant+(TMM3).png","Elephant+(TNCC).png","Elephant+(TNEC).png","Elephant+(TWWK).png","Elf+Druid+(TC14).png","Elf+Druid+(TCMA).png","Elf+Knight+(TGRN).png","Elf+Warrior+(T2XM).png","Elf+Warrior+(TA25).png","Elf+Warrior+(TC14).png","Elf+Warrior+(TC16).png","Elf+Warrior+(TCMA).png","Elf+Warrior+(TCMR).png","Elf+Warrior+(TDD1).png","Elf+Warrior+(TDDS).png","Elf+Warrior+(TDDU).png","Elf+Warrior+(TEMA).png","Elf+Warrior+(TEVG).png","Elf+Warrior+(TKHM).png","Elf+Warrior+(TLRW).png","Elf+Warrior+(TM19).png","Elf+Warrior+(TNCC).png","Elf+Warrior+(TORI).png","Elf+Warrior+(TSHM).png","Ellywick+Tumblestrum+Emblem+(TAFR).png","Elspeth+Knight-Errant+Emblem+(TMD1).png","Elspeth+Knight-Errant+Emblem+(TMED).png","Elspeth+Knight-Errant+Emblem+(TMMA).png","Elspeth+Suns+Champion+Emblem+(TTHS).png","Energy+Reserve+(TKLD).png","Etherium+Cell+(TAER).png","Experience+(TC15).png","Experience+(TCM2).png","Experience+(TCMA).png","Faerie+(TELD).png","Faerie+(TNCC).png","Faerie+Dragon+(TAFR).png","Faerie+Dragon+(TCLB).png","Faerie+Rogue+(T2X2).png","Faerie+Rogue+(TMM2).png","Faerie+Rogue+(TMMA).png","Faerie+Rogue+(TMOR).png","Faerie+Rogue+(TSHM).png","Faerie+Rogue+(TUMA).png","Faerie+Rogue+(TZNC).png","Faerie+Spy+(TUST).png","Feather+(TIKO).png","Fish+(TA25).png","Fish+(TC14).png","Fish+(TC21).png","Fish+(TSNC).png","Food+(TC21).png","Food+(TELD).png","Food+(TMH2).png","Food+(TNCC).png","Foretell+(TKHM).png","Fractal+(TSTX).png","Frog+Lizard+(TC15).png","Frog+Lizard+(TC21).png","Frog+Lizard+(TGTC).png","Frog+Lizard+(TRNA).png","Fungus+Beast+(TC21).png","Gargoyle+(TC14).png","Gargoyle+(TC19).png","Gargoyle+(TCMA).png","Gargoyle+(TM10).png","Garruk+Apex+Predator+Emblem+(TM15).png","Garruk+Apex+Predator+Emblem+(TMED).png","Garruk+Caller+of+Beasts+Emblem+(TM14).png","Garruk+Cursed+Huntsman+Emblem+(TELD).png","Garruk+Unleashed+Emblem+(TM21).png","Germ+(T2XM).png","Germ+(TC14).png","Germ+(TC15).png","Germ+(TC16).png","Germ+(TCM2).png","Germ+(TCMA).png","Germ+(TMBS).png","Germ+(TMM2).png","Germ+(TPCA).png","Germ+(TZNC).png","Giant+(TELD).png","Giant+(TTSR).png","Giant+Teddy+Bear+(TUND).png","Giant+Warrior+(TMM3).png","Giant+Warrior+(TMMA).png","Giant+Warrior+(TMOR).png","Giant+Warrior+(TSHM).png","Giant+Wizard+(TKHM).png","Gideon+Ally+of+Zendikar+Emblem+(TBFZ).png","Gideon+of+the+Trials+Emblem+(TAKH).png","Glyph+Keeper+(TAKH).png","Gnome+(TUST).png","Goat+(TC14).png","Goat+(TC16).png","Goat+(TCLB).png","Goat+(TCM2).png","Goat+(TELD).png","Goat+(TEVE).png","Goat+(TM13).png","Goat+(TM14).png","Goat+(TNCC).png","Goat+(TPCA).png","Goat+(TTHB).png","Goat+(TUST).png","Goblin+(T10E).png","Goblin+(TA25).png","Goblin+(TAFR).png","Goblin+(TALA).png","Goblin+(TC14).png","Goblin+(TC16).png","Goblin+(TCLB).png","Goblin+(TCM2).png","Goblin+(TCN2).png","Goblin+(TDD1).png","Goblin+(TDDG).png","Goblin+(TDDS).png","Goblin+(TDDT).png","Goblin+(TDOM).png","Goblin+(TDTK).png","Goblin+(TEMA).png","Goblin+(TEVG).png","Goblin+(TGK2).png","Goblin+(TGRN).png","Goblin+(TKTK).png","Goblin+(TM10).png","Goblin+(TM13).png","Goblin+(TM15).png","Goblin+(TM19).png","Goblin+(TMH1).png","Goblin+(TMH2).png","Goblin+(TMM3).png","Goblin+(TMMA).png","Goblin+(TNEC).png","Goblin+(TNPH).png","Goblin+(TORI).png","Goblin+(TPCA).png","Goblin+(TRNA).png","Goblin+(TRTR).png","Goblin+(TSOM).png","Goblin+(TTSR).png","Goblin+(TUGL).png","Goblin+(TUND).png","Goblin+(TUST).png","Goblin+(TWAR).png","Goblin+Construct+(TZNR).png","Goblin+Rogue+(TLRW).png","Goblin+Rogue+(TMMA).png","Goblin+Rogue+(TZNC).png","Goblin+Shaman+(TNEO).png","Goblin+Soldier+(TEMA).png","Goblin+Soldier+(TEVE).png","Goblin+Warrior+(TC20).png","Goblin+Warrior+(TMM3).png","Goblin+Warrior+(TSHM).png","Goblin+Wizard+(TM21).png","Gold+(TBNG).png","Gold+(TC15).png","Gold+(TC17).png","Gold+(TCLB).png","Gold+(TTHB).png","Golem+(T2XM).png","Golem+(TC21).png","Golem+(TCMR).png","Golem+(TM20).png","Golem+(TMBS).png","Golem+(TMH1).png","Golem+(TMH2).png","Golem+(TMM2).png","Golem+(TMM3).png","Golem+(TNPH).png","Golem+(TRIX).png","Golem+(TSOM).png","Golem+(TTHS).png","Gremlin+(TAER).png","Griffin+(TDDH).png","Griffin+(TDDL).png","Griffin+(TM21).png","Griffin+(TTSR).png","Guenhwyvar+(TAFR).png","Harpy+(TTHS).png","Heart-Piercer+Manticore+(TAKH).png","Heart-Piercer+Manticore+(TC19).png","Hellion+(TM13).png","Hellion+(TPCA).png","Hellion+(TROE).png","Hippo+(TAKH).png","Homunculus+(TALA).png","Homunculus+(TISD).png","Homunculus+(TUMA).png","Honored+Hydra+(TAKH).png","Hornet+(TDDE).png","Horror+(TC14).png","Horror+(TC16).png","Horror+(TC18).png","Horror+(TC19).png","Horror+(TC21).png","Horror+(TCLB).png","Horror+(TCMR).png","Horror+(TE01).png","Horror+(TGTC).png","Horror+(TMBS).png","Horse+(THOU).png","Huatli+Radiant+Champion+Emblem+(TRIX).png","Human+(TAVR).png","Human+(TC19).png","Human+(TC20).png","Human+(TCLB).png","Human+(TDKA).png","Human+(TELD).png","Human+(TEMN).png","Human+(TMID).png","Human+(TNCC).png","Human+(TRNA).png","Human+(TVOW).png","Human+Cleric+(TELD).png","Human+Cleric+(TSOI).png","Human+Monk+(TNEO).png","Human+Rogue+(TELD).png","Human+Soldier+(T2XM).png","Human+Soldier+(TIKO).png","Human+Soldier+(TMIC).png","Human+Soldier+(TNCC).png","Human+Soldier+(TSOI).png","Human+Soldier+(TTHB).png","Human+Soldier+(TVOW).png","Human+Warrior+(TELD).png","Human+Warrior+(TKHM).png","Human+Wizard+(TEMN).png","Hydra+(TC20).png","Hydra+(TC21).png","Hydra+(TJOU).png","Hydra+(TZNR).png","Icingdeath+Frost+Tongue+(TAFR).png","Icy+Manalith+(TKHM).png","Illusion+(TAFC).png","Illusion+(TCMR).png","Illusion+(TMH1).png","Illusion+(TMMA).png","Illusion+(TRNA).png","Illusion+(TXLN).png","Illusion+(TZEN).png","Illusion+(TZNR).png","Inkling+(TCLB).png","Inkling+(TSTX).png","Innistrad+Checklist+(TISD).png","Insect+(TA25).png","Insect+(TAKH).png","Insect+(TC20).png","Insect+(TC21).png","Insect+(TCLB).png","Insect+(TCN2).png","Insect+(TGRN).png","Insect+(THOU).png","Insect+(TM10).png","Insect+(TM15).png","Insect+(TMH2).png","Insect+(TMID).png","Insect+(TMM2).png","Insect+(TNCC).png","Insect+(TPCA).png","Insect+(TSOI).png","Insect+(TSOM).png","Insect+(TTSR).png","Insect+(TVOW).png","Insect+(TZNR).png","Ixalan+Checklist+(TXLN).png","Jace+Telepath+Unbound+Emblem+(TORI).png","Jace+Unraveler+of+Secrets+Emblem+(TSOI).png","Jaya+Ballard+Emblem+(TDOM).png","Jaya+Ballard+Emblem+(TMED).png","Kaito+Shizuki+Emblem+(TNEO).png","Karox+Bladewing+(TDOM).png","Kaya+the+Inexorable+Emblem+(TKHM).png","Keimi+(TNEO).png","Kiora+Master+of+the+Depths+Emblem+(TBFZ).png","Kiora+the+Crashing+Wave+Emblem+(TBNG).png","Kithkin+Soldier+(TCMA).png","Kithkin+Soldier+(TKHC).png","Kithkin+Soldier+(TLRW).png","Kithkin+Soldier+(TMMA).png","Kithkin+Soldier+(TSHM).png","Knight+(T2X2).png","Knight+(TAFC).png","Knight+(TC15).png","Knight+(TCLB).png","Knight+(TCM2).png","Knight+(TCMA).png","Knight+(TDOM).png","Knight+(TELD).png","Knight+(TM19).png","Knight+(TM21).png","Knight+(TMIC).png","Knight+(TORI).png","Knight+(TRTR).png","Knight+(TTSR).png","Knight+Ally+(TBFZ).png","Kobolds+of+Kher+Keep+(TA25).png","Kobolds+of+Kher+Keep+(TCLB).png","Kobolds+of+Kher+Keep+(TTSR).png","Komas+Coil+(TKHM).png","Kor+Ally+(TBFZ).png","Kor+Ally+(TZNC).png","Kor+Soldier+(TC14).png","Kor+Soldier+(TZEN).png","Kor+Warrior+(TCLB).png","Kor+Warrior+(TZNR).png","Koth+of+the+Hammer+Emblem+(TDDI).png","Kraken+(TA25).png","Kraken+(TBNG).png","Kraken+(TC14).png","Kraken+(TC21).png","Kraken+(TIKO).png","Kraken+(TTHB).png","Labyrinth+Guardian+(TAKH).png","Land+Mine+(TM15).png","Lightning+Rager+(TC15).png","Lightning+Rager+(TCM2).png","Lightning+Rager+(TNCC).png","Liliana+Defiant+Necromancer+Emblem+(TORI).png","Liliana+of+the+Dark+Realms+Emblem+(TM13).png","Liliana+of+the+Dark+Realms+Emblem+(TM14).png","Liliana+the+Last+Hope+Emblem+(T2X2).png","Liliana+the+Last+Hope+Emblem+(TEMN).png","Liliana+the+Last+Hope+Emblem+(TMED).png","Liliana+Waker+of+the+Dead+Emblem+(TM21).png","Lizard+(TARB).png","Lizard+(TCN2).png","Llanowar+Elves+(TTSR).png","Lolth+Spider+Queen+Emblem+(TAFR).png","Lost+Mine+of+Phandelver+(TAFR).png","Lukka+Wayward+Bonder+Emblem+(TSTX).png","Magic+Origins+Checklist+(TORI).png","Manifest+(TC18).png","Manifest+(TC19).png","Manifest+(TFRF).png","Manifest+(TNCC).png","Marit+Lage+(T2XM).png","Marit+Lage+(TMH1).png","Marit+Lage+(TUMA).png","Mask+(TC18).png","Mechtitan+(TNEO).png","Merfolk+(TXLN).png","Merfolk+(TZEN).png","Merfolk+Wizard+(TLRW).png","Metallic+Sliver+(TTSR).png","Minion+(TDDE).png","Minotaur+(TJOU).png","Monk+(T2X2).png","Monk+(TFRF).png","Mordenkainen+Emblem+(TAFR).png","Morph+(TA25).png","Morph+(TC19).png","Morph+(TDTK).png","Morph+(TKTK).png","Mouse+(TELD).png","Mu+Yanling+Sky+Dancer+Emblem+(TM20).png","Myr+(T2XM).png","Myr+(TBBD).png","Myr+(TC14).png","Myr+(TC16).png","Myr+(TC18).png","Myr+(TC21).png","Myr+(TCM2).png","Myr+(TDDU).png","Myr+(TMD1).png","Myr+(TMH1).png","Myr+(TMM2).png","Myr+(TNEC).png","Myr+(TNPH).png","Myr+(TSOM).png","Narset+of+the+Ancient+Way+Emblem+(TIKO).png","Narset+Transcendent+Emblem+(TDTK).png","Nightmare+(TTHB).png","Nightmare+Horror+(TDOM).png","Ninja+(TNEO).png","Nissa+Vital+Force+Emblem+(TKLD).png","Nissa+Who+Shakes+the+World+Emblem+(TWAR).png","Ob+Nixilis+of+the+Black+Oath+Emblem+(TC14).png","Ob+Nixilis+Reignited+Emblem+(TBFZ).png","Ob+Nixilis+Reignited+Emblem+(TC19).png","Octopus+(TBFZ).png","Ogre+(TC16).png","Ogre+(TCLB).png","Ogre+(TCNS).png","Ogre+(TNCC).png","Ogre+(TWWK).png","Ogre+Warrior+(TSNC).png","Oketras+Attendant+(TAKH).png","On+an+Adventure+(TELD).png","Ooze+(T2XM).png","Ooze+(TALA).png","Ooze+(TGK2).png","Ooze+(TISD).png","Ooze+(TM11).png","Ooze+(TMID).png","Ooze+(TMM3).png","Ooze+(TNCC).png","Ooze+(TPCA).png","Ooze+(TRNA).png","Ooze+(TROE).png","Ooze+(TRTR).png","Ooze+(TSOI).png","Ooze+(TUMA).png","Ox+(TCLB).png","Ox+(TM19).png","Pegasus+(TC14).png","Pegasus+(TC19).png","Pegasus+(TCLB).png","Pegasus+(TKHC).png","Pegasus+(TTHB).png","Pegasus+(TUGL).png","Pentavite+(TC14).png","Pentavite+(TCM2).png","Pentavite+(TM12).png","Pest+(TSTX).png","Phyrexian+Beast+(TCLB).png","Phyrexian+Germ+(TMH2).png","Phyrexian+Germ+(TNEC).png","Phyrexian+Golem+(T2X2).png","Pilot+(TNEO).png","Pirate+(TCLB).png","Pirate+(TM21).png","Pirate+(TXLN).png","Plant+(T2XM).png","Plant+(TBFZ).png","Plant+(TC18).png","Plant+(TC19).png","Plant+(TCMR).png","Plant+(TNCC).png","Plant+(TNEC).png","Plant+(TOGW).png","Plant+(TPCA).png","Plant+(TWWK).png","Plant+(TXLN).png","Plant+(TZNR).png","Poison+Counter+(TMBS).png","Poison+Counter+(TNPH).png","Poison+Counter+(TSOM).png","Proven+Combatant+(THOU).png","Punchcard+(TAKH).png","Punchcard+(THOU).png","Rabbit+(TCLB).png","Ragavan+(TAER).png","Ral+Izzet+Viceroy+Emblem+(TGRN).png","Ral+Izzet+Viceroy+Emblem+(TMED).png","Rat+(TAFC).png","Rat+(TC17).png","Rat+(TELD).png","Rat+(TGTC).png","Rat+(TSHM).png","Rat+(TZNC).png","Rat+Rogue+(TNEO).png","Reflection+(TTHB).png","Replicated+Ring+(TKHM).png","Resilient+Khenra+(THOU).png","Rhino+(TC19).png","Rhino+(TMH1).png","Rhino+(TMIC).png","Rhino+(TRTR).png","Rhino+Warrior+(TSNC).png","Rivals+of+Ixalan+Checklist+(TRIX).png","Rock+(TCMR).png","Rogue+(TSNC).png","Rogue+(TUST).png","Rowan+Kenrith+Emblem+(TBBD).png","Rowan+Kenrith+Emblem+(TCLB).png","Rowan+Scholar+of+Sparks+Emblem+(TSTX).png","Sacred+Cat+(TAKH).png","Salamander+Warrior+(TCMR).png","Samurai+(TNEO).png","Saproling+(T10E).png","Saproling+(T2X2).png","Saproling+(T2XM).png","Saproling+(TAFC).png","Saproling+(TALA).png","Saproling+(TC15).png","Saproling+(TC16).png","Saproling+(TC19).png","Saproling+(TC20).png","Saproling+(TC21).png","Saproling+(TCLB).png","Saproling+(TCM2).png","Saproling+(TCMA).png","Saproling+(TCMR).png","Saproling+(TDDE).png","Saproling+(TDDH).png","Saproling+(TDDJ).png","Saproling+(TDOM).png","Saproling+(TGK2).png","Saproling+(TM12).png","Saproling+(TM13).png","Saproling+(TM14).png","Saproling+(TM21).png","Saproling+(TMM2).png","Saproling+(TMM3).png","Saproling+(TMMA).png","Saproling+(TNCC).png","Saproling+(TNEC).png","Saproling+(TPCA).png","Saproling+(TRIX).png","Saproling+(TRTR).png","Saproling+(TTSR).png","Saproling+(TZNC).png","Sarkhan+the+Dragonspeaker+Emblem+(TKTK).png","Satyr+(TCLB).png","Satyr+(TTHB).png","Satyr+(TTHS).png","Sculpture+(TC19).png","Serf+(TEMA).png","Serra+the+Benevolent+Emblem+(TMH1).png","Servo+(T2XM).png","Servo+(TAFC).png","Servo+(TC18).png","Servo+(TKHC).png","Servo+(TKLD).png","Servo+(TWAR).png","Shadows+Over+Innistrad+Checklist+1+(TSOI).png","Shadows+Over+Innistrad+Checklist+2+(TSOI).png","Shapeshifter+(T2XM).png","Shapeshifter+(TC15).png","Shapeshifter+(TC18).png","Shapeshifter+(TCLB).png","Shapeshifter+(TCM2).png","Shapeshifter+(TKHM).png","Shapeshifter+(TLRW).png","Shapeshifter+(TMH1).png","Shard+(TKHM).png","Shark+(TIKO).png","Sheep+(TUGL).png","Shrine+(TNEC).png","Sinuous+Striker+(THOU).png","Skeleton+(TA25).png","Skeleton+(TAFR).png","Skeleton+(TALA).png","Skeleton+(TCLB).png","Sliver+(TM14).png","Sliver+(TM15).png","Slug+(TVOW).png","Smoke+Blessing+(TNEC).png","Snake+(TAKH).png","Snake+(TC15).png","Snake+(TC19).png","Snake+(TC20).png","Snake+(THOU).png","Snake+(TJOU).png","Snake+(TKTK).png","Snake+(TMIC).png","Snake+(TMM2).png","Snake+(TZEN).png","Soldier+(T10E).png","Soldier+(T2X2).png","Soldier+(T2XM).png","Soldier+(TA25).png","Soldier+(TALA).png","Soldier+(TBNG).png","Soldier+(TC14).png","Soldier+(TC16).png","Soldier+(TC18).png","Soldier+(TC20).png","Soldier+(TCLB).png","Soldier+(TCMR).png","Soldier+(TCN2).png","Soldier+(TDDF).png","Soldier+(TDOM).png","Soldier+(TE01).png","Soldier+(TEMA).png","Soldier+(TGRN).png","Soldier+(TGTC).png","Soldier+(TKHC).png","Soldier+(TM10).png","Soldier+(TM12).png","Soldier+(TM13).png","Soldier+(TM15).png","Soldier+(TM19).png","Soldier+(TM20).png","Soldier+(TM21).png","Soldier+(TMD1).png","Soldier+(TMED).png","Soldier+(TMH1).png","Soldier+(TMM2).png","Soldier+(TMM3).png","Soldier+(TMMA).png","Soldier+(TNCC).png","Soldier+(TORI).png","Soldier+(TRTR).png","Soldier+(TSOM).png","Soldier+(TTHS).png","Soldier+(TTSR).png","Soldier+(TUGL).png","Soldier+(TUMA).png","Soldier+(TWAR).png","Soldier+Ally+(TWWK).png","Sorin+Lord+of+Innistrad+Emblem+(TDKA).png","Sorin+Solemn+Visitor+Emblem+(TKTK).png","Spark+Elemental+(TUMA).png","Sphinx+(TJOU).png","Sphinx+(TRNA).png","Spider+(T2X2).png","Spider+(TAFR).png","Spider+(TC15).png","Spider+(TCLB).png","Spider+(TCMA).png","Spider+(TEMN).png","Spider+(TISD).png","Spider+(TJOU).png","Spider+(TMH1).png","Spider+(TMID).png","Spider+(TMM3).png","Spider+(TMMA).png","Spider+(TNCC).png","Spider+(TPCA).png","Spider+(TSHM).png","Spider+(TTHB).png","Spider+(TTSR).png","Spider+(TUMA).png","Spirit+(T2X2).png","Spirit+(TA25).png","Spirit+(TAVR).png","Spirit+(TBBD).png","Spirit+(TC14).png","Spirit+(TC15).png","Spirit+(TC16).png","Spirit+(TC19).png","Spirit+(TC20).png","Spirit+(TC21).png","Spirit+(TCM2).png","Spirit+(TCMA).png","Spirit+(TCMR).png","Spirit+(TCN2).png","Spirit+(TCNS).png","Spirit+(TDDC).png","Spirit+(TDDK).png","Spirit+(TDVD).png","Spirit+(TE01).png","Spirit+(TEMA).png","Spirit+(TEVE).png","Spirit+(TFRF).png","Spirit+(TGK2).png","Spirit+(TGTC).png","Spirit+(TIMA).png","Spirit+(TISD).png","Spirit+(TKHM).png","Spirit+(TKTK).png","Spirit+(TM15).png","Spirit+(TM20).png","Spirit+(TMD1).png","Spirit+(TMH1).png","Spirit+(TMID).png","Spirit+(TMM2).png","Spirit+(TMM3).png","Spirit+(TNEO).png","Spirit+(TRNA).png","Spirit+(TSHM).png","Spirit+(TSNC).png","Spirit+(TSOI).png","Spirit+(TSTX).png","Spirit+(TUMA).png","Spirit+(TVOC).png","Spirit+(TVOW).png","Spirit+(TWAR).png","Spirit+Cleric+(TVOW).png","Spirit+Warrior+(TKTK).png","Squid+(TC16).png","Squid+(TCLB).png","Squid+(TM15).png","Squid+(TNCC).png","Squirrel+(T2XM).png","Squirrel+(TCLB).png","Squirrel+(TCNS).png","Squirrel+(TMH1).png","Squirrel+(TMH2).png","Squirrel+(TUGL).png","Squirrel+(TUND).png","Squirrel+(TUST).png","Stangg+Twin+(TA25).png","Steadfast+Sentinel+(THOU).png","Stoneforged+Blade+(TC14).png","Storm+Crow+(TUST).png","Sunscourge+Champion+(THOU).png","Survivor+(TC18).png","Tah-Crop+Skirmisher+(TAKH).png","Tamiyo+Field+Researcher+Emblem+(TEMN).png","Tamiyo+the+Moon+Sage+Emblem+(TAVR).png","Tamiyo+the+Moon+Sage+Emblem+(TMED).png","Tamiyos+Notebook+(TNEO).png","Teferi+Hero+of+Dominaria+Emblem+(TDOM).png","Teferi+Hero+of+Dominaria+Emblem+(TMED).png","Teferi+Temporal+Archmage+Emblem+(TC14).png","Teferi+Who+Slows+the+Sunset+Emblem+(TMID).png","Temmet+Vizier+of+Naktamun+(TAKH).png","Tentacle+(TNCC).png","Tentacle+(TTHB).png","Tezzeret+Artifice+Master+Emblem+(TM19).png","Tezzeret+Betrayer+of+Flesh+Emblem+(TNEO).png","Tezzeret+the+Schemer+Emblem+(TAER).png","The+Atropal+(TAFR).png","The+Monarch+(TAFC).png","The+Monarch+(TCMR).png","The+Monarch+(TCN2).png","Thopter+(T2XM).png","Thopter+(TAFC).png","Thopter+(TALA).png","Thopter+(TC16).png","Thopter+(TC18).png","Thopter+(TC21).png","Thopter+(TDDU).png","Thopter+(TKHC).png","Thopter+(TKLD).png","Thopter+(TM19).png","Thopter+(TMBS).png","Thopter+(TMH2).png","Thopter+(TNCC).png","Thopter+(TNEC).png","Thopter+(TORI).png","Thopter+(TRNA).png","Thopter+(TVOC).png","Thopter+(TZNC).png","Thrull+(TCMR).png","Thrull+(TDDC).png","Thrull+(TDVD).png","Thrull+(TMM2).png","Tibalt+Cosmic+Impostor+Emblem+(TKHM).png","Timeless+Dragon+(TMH2).png","Timeless+Witness+(TMH2).png","Tomb+of+Annihilation+(TAFR).png","Treasure+(T2X2).png","Treasure+(T2XM).png","Treasure+(TAFR).png","Treasure+(TC19).png","Treasure+(TC20).png","Treasure+(TCLB).png","Treasure+(TCMR).png","Treasure+(TKHM).png","Treasure+(TM20).png","Treasure+(TM21).png","Treasure+(TMH2).png","Treasure+(TNEO).png","Treasure+(TRNA).png","Treasure+(TSNC).png","Treasure+(TSTX).png","Treasure+(TVOW).png","Treasure+(TXLN).png","Treefolk+(TC14).png","Treefolk+(TCMA).png","Treefolk+(TMID).png","Treefolk+(TNCC).png","Treefolk+Shaman+(TMMA).png","Treefolk+Shaman+(TMOR).png","Treefolk+Warrior+(TM15).png","Triskelavite+(TCM2).png","Troll+Warrior+(TKHM).png","Trueheart+Duelist+(TAKH).png","Tuktuk+the+Returned+(T2XM).png","Tuktuk+the+Returned+(TC14).png","Tuktuk+the+Returned+(TCM2).png","Tuktuk+the+Returned+(TROE).png","Tyvar+Kell+Emblem+(TKHM).png","Unwavering+Initiate+(TAKH).png","Vampire+(T2X2).png","Vampire+(TC17).png","Vampire+(TDKA).png","Vampire+(TISD).png","Vampire+(TKTK).png","Vampire+(TMID).png","Vampire+(TVOW).png","Vampire+(TXLN).png","Vampire+(TZEN).png","Vampire+Knight+(TSOI).png","Vanguard+Suppressor+(T40K).png","Vecna+(TAFR).png","Venser+the+Sojourner+Emblem+(TDDI).png","Vivien+Reid+Emblem+(TM19).png","Vizier+of+Many+Faces+(TAKH).png","Voja+Friend+to+Elves+(TWAR).png","Volos+Journal+(TCLB).png","Vraska+Golgari+Queen+Emblem+(TGRN).png","Vraska+Golgari+Queen+Emblem+(TMED).png","Wall+(TDDT).png","Wall+(TEMA).png","Wall+(TTHB).png","Wall+(TWAR).png","Warrior+(TAKH).png","Warrior+(TBBD).png","Warrior+(TCLB).png","Warrior+(TDTK).png","Warrior+(TFRF).png","Warrior+(TKTK).png","Wasp+(T10E).png","Weird+(TM21).png","Whale+(TA25).png","Whale+(TC14).png","Whale+(TC21).png","Will+Kenrith+Emblem+(TBBD).png","Will+Kenrith+Emblem+(TCLB).png","Wizard+(TCLB).png","Wizard+(TSNC).png","Wizard+(TWAR).png","Wolf+(T2XM).png","Wolf+(TA25).png","Wolf+(TAFR).png","Wolf+(TBNG).png","Wolf+(TC14).png","Wolf+(TC15).png","Wolf+(TCLB).png","Wolf+(TCMA).png","Wolf+(TCNS).png","Wolf+(TELD).png","Wolf+(TISD).png","Wolf+(TLRW).png","Wolf+(TM10).png","Wolf+(TM14).png","Wolf+(TM20).png","Wolf+(TMID).png","Wolf+(TMM2).png","Wolf+(TSHM).png","Wolf+(TSOI).png","Wolf+(TSOM).png","Wolf+(TTHB).png","Wolf+(TVOW).png","Wolf+(TWAR).png","Wolf+(TZEN).png","Worm+(T2X2).png","Worm+(TC16).png","Worm+(TC18).png","Worm+(TEVE).png","Worm+(TMM2).png","Worm+(TMMA).png","Wrenn+and+Seven+Emblem+(TMID).png","Wrenn+and+Six+Emblem+(T2X2).png","Wrenn+and+Six+Emblem+(TMH1).png","Wurm+(T2XM).png","Wurm+(TAKH).png","Wurm+(TC14).png","Wurm+(TC19).png","Wurm+(TC21).png","Wurm+(TCLB).png","Wurm+(TCM2).png","Wurm+(TDDS).png","Wurm+(TEMA).png","Wurm+(TGK2).png","Wurm+(TM12).png","Wurm+(TM13).png","Wurm+(TMM3).png","Wurm+(TNCC).png","Wurm+(TRTR).png","Wurm+(TSOM).png","Wurm+(TUMA).png","Zariel+Archduke+of+Avernus+Emblem+(TAFR).png","Zombie+(T10E).png","Zombie+(T2X2).png","Zombie+(TAFR).png","Zombie+(TAKH).png","Zombie+(TALA).png","Zombie+(TAVR).png","Zombie+(TBBD).png","Zombie+(TBNG).png","Zombie+(TC14).png","Zombie+(TC15).png","Zombie+(TC16).png","Zombie+(TC17).png","Zombie+(TC18).png","Zombie+(TC19).png","Zombie+(TC20).png","Zombie+(TC21).png","Zombie+(TCM2).png","Zombie+(TCMA).png","Zombie+(TCMR).png","Zombie+(TCN2).png","Zombie+(TCNS).png","Zombie+(TDTK).png","Zombie+(TEMA).png","Zombie+(TEMN).png","Zombie+(TISD).png","Zombie+(TJOU).png","Zombie+(TKTK).png","Zombie+(TM10).png","Zombie+(TM11).png","Zombie+(TM12).png","Zombie+(TM13).png","Zombie+(TM14).png","Zombie+(TM15).png","Zombie+(TM19).png","Zombie+(TM20).png","Zombie+(TM21).png","Zombie+(TMBS).png","Zombie+(TMED).png","Zombie+(TMH1).png","Zombie+(TMH2).png","Zombie+(TMIC).png","Zombie+(TMID).png","Zombie+(TMM3).png","Zombie+(TMMA).png","Zombie+(TNCC).png","Zombie+(TOGW).png","Zombie+(TORI).png","Zombie+(TPCA).png","Zombie+(TRNA).png","Zombie+(TSOI).png","Zombie+(TTHB).png","Zombie+(TUGL).png","Zombie+(TUMA).png","Zombie+(TVOW).png","Zombie+(TWAR).png","Zombie+Army+(TMH2).png","Zombie+Army+(TMIC).png","Zombie+Army+(TWAR).png","Zombie+Berserker+(TKHM).png","Zombie+Giant+(TBBD).png","Zombie+Giant+(TZEN).png","Zombie+Horror+(TDTK).png","Zombie+Knight+(TDOM).png","Zombie+Warrior+(TWAR).png","Zombie+Wizard+(TARB).png"];
+
+var protectedDragged = new Array();
+var dragged = new Array();
+function addToDrag(id) {
+	protectedDragged.push(id);
+	setTimeout(moveFromProtected, 200);
+}
+
+function clearDragged() {
+	while(dragged.length > 0) {
+		dragged.pop();
+	}
+}
+
+function changeCoords(event) {
+  var x = event.clientX;
+  var y = event.clientY;
+  var coords = "X coords: " + x + ", Y coords: " + y;
+  if(x != 0 && y != 0) {
+  	for (var i = 0; i < dragged.length; i++) {
+  		document.getElementById(dragged[i]).style = "margin-left:" + x + "px;margin-top:" + y + "px;";
+  	}
+  	for (var i = 0; i < protectedDragged.length; i++) {
+  		document.getElementById(protectedDragged[i]).style = "margin-left:" + x + "px;margin-top:" + y + "px;";
+  	}
+  }
+}
+
+
+
+
+
+function moveFromProtected() {
+	dragged.push(protectedDragged.pop());
+}
+
+
+var tempSelector;
+var tempCount = 0;
+var toDisplay = new Array();
+function searchTokens(tokenName, selectionContainer, cardId) {
+  if(tokenName.value.toLowerCase().includes("delete")) {
+    document.getElementById(selectionContainer).parentElement.innerHTML = "";
+  }
+  else {
+    displaySelection(selectionContainer);
+    tempCount = 0;
+    toDisplay = new Array();
+    for (var i = 0; i < tokens.length; i++) {
+      if(tokens[i].toLowerCase().includes(tokenName.value.toLowerCase())) {
+        toDisplay.push(tokens[i]);
+      }
+      if(toDisplay.length == 8) {
+        break;
+      }
+    }
+
+    tempSelector = document.getElementById(selectionContainer);
+    for (var i = 1; i < tempSelector.childNodes.length; i=i+2) {
+      if(i < tempSelector.childNodes.length) {
+        if(tempCount + 1 > toDisplay.length) {
+            tempSelector.childNodes[i].style.display = "none";
+        }
+        else {
+          //selectionContainer.childNodes[i]
+          tempSelector.childNodes[i].style.display = "inline-block";
+          tempSelector.childNodes[i].childNodes[1].src = "Assets/Tokens/" + String.raw`${toDisplay[tempCount]}`;
+          tempSelector.childNodes[i].setAttribute('onclick','changeToken(\"' + cardId + '\",\"' + toDisplay[tempCount] + '\")');
+        }
+        tempCount++;
+      }
+    }
+  }
+}
+
+
+function displaySelection(id) {
+  document.getElementById(id).style.display = "inline-block";
+}
+
+var allSelections;
+function hideSelection() {
+  allSelections = document.getElementsByClassName("tokenSelection");
+  for (var i = 0; i < allSelections.length; i++) {
+    allSelections[i].style.display = "none";
+  }
+}
+
+function changeToken(id, newToken) {
+  console.log(document.getElementById(id));
+  document.getElementById(id).src = 'Assets/Tokens/' + newToken;
+  hideSelection();
+}
+
+function changeCount(caller, selectionContainer, id) { 
+  if(caller.value ==  "0") {
+  	document.getElementById(selectionContainer).parentElement.innerHTML = "";
+  }
+  document.getElementById(id).innerHTML = caller.value;
+}
+
+
+var tokenCount = 1;
+
+var cardHtml;
+
+window.onload = onStart;
+
+function onStart() {
+  //setup cardHtml
+  cardHtml = document.getElementById('cardCBase').cloneNode(true);
+}
+
+var newHtml;
+
+function setupNewToken() {
+  //get cardContainer id and make it unique
+  //get token image id and make it unique
+  //get token selector id and make it unique
+  //make all onclicks
+  newHtml = cardHtml.cloneNode(true);
+  newHtml.id = "cardContainer" + tokenCount;
+  newHtml.style.display = "inline-block";
+  newHtml.getElementsByClassName('cardButton')[0].setAttribute('onclick',"addToDrag('cardContainer" + tokenCount + "')");
+
+  newHtml.getElementsByClassName('tokenSelection')[0].id="token" + tokenCount + "selector";
+  //onchange
+  newHtml.childNodes[3].setAttribute('onkeyup',"searchTokens(this,'token" + tokenCount + "selector', 'cardView" + tokenCount + "')");
+  newHtml.childNodes[7].childNodes[1].id = "cardView" + tokenCount;
+  newHtml.childNodes[7].childNodes[3].id = "tokenCount" + tokenCount;
+  newHtml.childNodes[5].setAttribute('onkeyup',"changeCount(this, 'token" + tokenCount + "selector', 'tokenCount" + tokenCount + "')");
+}
+
+function addToken() {
+  setupNewToken();
+  document.body.innerHTML = document.body.innerHTML + newHtml.outerHTML;
+  tokenCount++;
+}
+
+
+var cards;
+function changeCardSize(slider) {
+  cards = document.getElementsByClassName('cardContainer');
+  for (var i = 0; i < cards.length; i++) {
+    cards[i].style.maxWidth = slider.value + "px";
+    cards[i].style.minWidth = slider.value + "px";
+  }
+}
+
+function tap(element) {
+  if(element.parentElement.childNodes[1].getAttribute('class').includes("tapped")) {
+    element.parentElement.childNodes[1].setAttribute('class',"card");
+  }
+  else {
+    element.parentElement.childNodes[1].setAttribute('class',"card tapped");
+  }
+}
+
+
+
+var cardContainers;
+var i = 0;
+function hideTokens() {
+  cardContainers = document.getElementsByClassName("cardContainer");
+  console.log(cardContainers.length);
+
+  while(i < cardContainers.length) {
+    console.log(i);
+    cardContainers[i].setAttribute('class',"card tapped");
+    i++;
+  }
+}
+
+function unhideTokens() {
+  cardContainers = document.getElementsByClassName("cardContainer");
+  for (var i = 0; i < cardContainers.length; i++) {
+    cardContainers[i].className = 'cardContainer';
+  }}
